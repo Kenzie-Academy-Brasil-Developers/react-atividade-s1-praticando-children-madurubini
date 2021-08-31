@@ -1,0 +1,24 @@
+.Card {
+  animation: spin infinite 5s linear;
+  box-shadow: 10px 10px 5px 0px rgba(181, 131, 141, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(181, 131, 141, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(181, 131, 141, 0.75);
+  background-color: #e5989b;
+  width: 25%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Card:hover {
+  animation: none;
+  filter: brightness(0.9);
+  color: #ffcdb2;
+  border: 1px solid #ffcdb2;
+}
